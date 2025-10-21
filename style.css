@@ -1,0 +1,229 @@
+/* ===== GENERAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f9fafb;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d2538;
+  color: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00b4d8;
+}
+
+/* ===== HERO SECTION ===== */
+/* ===== HERO SECTION WITH BACKGROUND IMAGE ===== */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('/sources/03\ Produktion.jpg') no-repeat center center;
+  background-size: cover;
+  border-bottom: 4px solid #00b4d8;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero h2 {
+  font-size: 1.4rem;
+  color: #cce3f0;
+}
+
+.hero p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #a8c5da;
+}
+
+.hero img {
+  margin-top: 1.5rem;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid #00b4d8;
+  object-fit: cover;
+  z-index: 1;
+  position: relative;
+}
+
+.hero img {
+  margin-top: 1.5rem;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid #00b4d8;
+  object-fit: cover;
+}
+
+/* ===== SECTIONS ===== */
+section {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  border-left: 5px solid #00b4d8;
+  padding-left: 10px;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+}
+
+section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+section li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* ===== PROJECTS ===== */
+.project {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-3px);
+  border-color: #00b4d8;
+}
+
+/* ===== CONTACT FORM ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+form input, form textarea {
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form button {
+  background: #0d2538;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #00b4d8;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  background: #0d2538;
+  color: #cce3f0;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* ===== LINKS ===== */
+a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+}
+/* ===== DETAILS / COLLAPSIBLE MODULES ===== */
+details {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+details[open] {
+  background: #f0f8ff;
+  border-color: #00b4d8;
+}
+
+summary {
+  font-weight: 600;
+  font-size: 1rem;
+  outline: none;
+}
+
+details ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+details ul li {
+  border-bottom: 1px solid #eee;
+  padding: 4px 0;
+}
+
