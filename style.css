@@ -216,6 +216,11 @@ summary {
   font-size: 1rem;
   outline: none;
 }
+.module-summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
 
 details ul {
   margin-top: 0.5rem;
